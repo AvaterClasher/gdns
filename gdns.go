@@ -429,7 +429,7 @@ func DnsRecordRead(buffer *BytePacketBuffer) (*DnsRecord, error) {
 
 func main() {
 	// Example usage: reading a DNS response from a binary file
-	data, err := os.ReadFile("response.txt")
+	data, err := os.ReadFile("response_packet.txt")
 	if err != nil {
 		fmt.Printf("Failed to read file: %v\n", err)
 		os.Exit(1)
